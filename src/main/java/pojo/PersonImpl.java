@@ -13,7 +13,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 public class PersonImpl implements Person {
 
     private String firstName = "国栋";
-    private String lastName = "曹曹曹";
+    private String lastName = "曹";
 
 
     public void setFirstName(String firstName) {
