@@ -15,6 +15,7 @@ public class PersonImplTest {
 
     @Test
     public void getFirstName() {
+        System.out.println("test");
         System.out.println(testPerson.getFirstName());
     }
 
