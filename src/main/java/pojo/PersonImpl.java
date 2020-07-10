@@ -68,9 +68,12 @@ public class PersonImpl implements Person {
 
     public static void main(String[] args) {
         Person cgd = new PersonImpl();
-        System.out.println("my fristname is"+cgd.getFirstName());
-        System.out.println("my lastname is"+cgd.getLastName());
-        System.out.println("my fullname is"+cgd.getFullName());
-
+        Person cgd2 = new PersonImpl();
+        System.out.println("my fristname is "+cgd.getFirstName());
+        System.out.println("my lastname is "+cgd.getLastName());
+        System.out.println("my fullname is "+cgd.getFullName());
+        System.out.println("toString: "+cgd);
+        System.out.println("==: "+(cgd==cgd2));
+        System.out.println("equal: "+(cgd.equals(cgd2)));
     }
 }
