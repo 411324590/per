@@ -67,6 +67,8 @@ public class PersonImpl implements Person {
     }
 
     public static void main(String[] args) {
+        Person cGD = new PersonImpl();
+        System.out.println("my name is"+cGD.getFullName());
 
     }
 }
