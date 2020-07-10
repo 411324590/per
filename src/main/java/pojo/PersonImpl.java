@@ -63,12 +63,14 @@ public class PersonImpl implements Person {
     }
 
     public String getFullName() {
-        return firstName+lastName;
+        return lastName+firstName;
     }
 
     public static void main(String[] args) {
         Person cgd = new PersonImpl();
-        System.out.println("my name is"+cgd.getFullName());
+        System.out.println("my fristname is"+cgd.getFirstName());
+        System.out.println("my lastname is"+cgd.getLastName());
+        System.out.println("my fullname is"+cgd.getFullName());
 
     }
 }
