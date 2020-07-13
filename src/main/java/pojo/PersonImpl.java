@@ -2,6 +2,7 @@ package pojo;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 /**
  * @ClassName : PersonImpl
@@ -12,9 +13,8 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 public class PersonImpl implements Person {
 
-    private String firstName = "国栋";
+    private String firstName = "国栋" ;
     private String lastName = "曹";
-
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -48,6 +48,7 @@ public class PersonImpl implements Person {
 
     @Override
     public String toString() {
+
         return "PersonImpl{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -75,5 +76,7 @@ public class PersonImpl implements Person {
         System.out.println("toString: "+cgd);
         System.out.println("==: "+(cgd==cgd2));
         System.out.println("equal: "+(cgd.equals(cgd2)));
+        cgd2.setFirstName("小二");
+        System.out.println("equal2: "+(cgd.equals(cgd2)));
     }
 }
