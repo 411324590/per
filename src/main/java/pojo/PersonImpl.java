@@ -96,6 +96,7 @@ public class PersonImpl implements Person {
 //        logger.warn("这是warn");
 //        logger.error("这是error");
 //        logger.fatal("这是fatal");
+
         PersonImpl cgd = new PersonImpl();
         Person cgd2 = new PersonImpl();
         System.out.println("my fristname is "+cgd.getFirstName());
