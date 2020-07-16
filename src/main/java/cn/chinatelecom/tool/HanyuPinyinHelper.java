@@ -1,4 +1,4 @@
-package tool;
+package cn.chinatelecom.tool;
 
 /**
  * @ClassName : Hanyu

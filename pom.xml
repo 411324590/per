@@ -35,6 +35,14 @@
             <version>2.5.1</version>
         </dependency>
 
+        <dependency>
+
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.45</version>
+
+        </dependency>
+
 <!--        <dependency>-->
 <!--            <groupId>org.projectlombok</groupId>-->
 <!--            <artifactId>lombok</artifactId>-->
@@ -74,6 +82,12 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
+                    <!--指定主类-->
+                    <archive>
+                        <manifest>
+                            <mainClass>cn.chinatelecom.jdbctest.Jdbctest</mainClass>
+                        </manifest>
+                    </archive>
                     <!-- 对于长文件名tar时不报警 -->
                     <tarLongFileMode>posix</tarLongFileMode>
 

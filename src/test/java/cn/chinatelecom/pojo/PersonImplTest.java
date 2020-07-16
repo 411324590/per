@@ -1,7 +1,6 @@
-package pojo;
+package cn.chinatelecom.pojo;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * @ClassName : PersonImplTest

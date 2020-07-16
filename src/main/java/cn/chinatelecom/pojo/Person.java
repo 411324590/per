@@ -1,4 +1,4 @@
-package pojo;
+package cn.chinatelecom.pojo;
 /**
  * @ClassName : Person
  * @Description : My new person class

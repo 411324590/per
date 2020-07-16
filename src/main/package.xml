@@ -21,11 +21,11 @@
             <source>src/main/package.xml</source>
             <outputDirectory>sources</outputDirectory>
         </file>
-        <!--<file>-->
-        <!--<source>${project.basedir}/src/main/bin/cdc.sh</source>-->
-        <!--<outputDirectory>bin</outputDirectory>-->
-        <!--<fileMode>755</fileMode>-->
-        <!--</file>-->
+<!--        <file>-->
+<!--        <source>${project.basedir}/src/main/bin/cdc.sh</source>-->
+<!--        <outputDirectory>bin</outputDirectory>-->
+<!--        <fileMode>755</fileMode>-->
+<!--        </file>-->
     </files>
 
     <fileSets>
@@ -79,10 +79,10 @@
             </includes>
         </fileSet>
 
-        <!--<fileSet>-->
-        <!--<directory>${project.basedir}/bin</directory>-->
-        <!--<outputDirectory>bin</outputDirectory>-->
-        <!--</fileSet>-->
+<!--        <fileSet>-->
+<!--        <directory>${project.basedir}/bin</directory>-->
+<!--        <outputDirectory>bin</outputDirectory>-->
+<!--        </fileSet>-->
 
         <fileSet>
             <directory>${project.basedir}/bin</directory>
