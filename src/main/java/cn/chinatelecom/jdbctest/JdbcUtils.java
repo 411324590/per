@@ -4,6 +4,7 @@ import java.sql.*;
 
 
 public class JdbcUtils {
+
  
  
 //通过上面的工具就可以获取到properties文件中的键值从而可以加载驱动 获取链接 从而 可以增删改查
@@ -86,7 +87,9 @@ public class JdbcUtils {
 
     public static void close(){
         try {
-            conn.close();
+            if (conn != null) {
+                conn.close();
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }

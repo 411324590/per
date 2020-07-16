@@ -16,9 +16,46 @@ import cn.chinatelecom.tool.HanyuPinyinHelper;
 
 public class PersonImpl implements Person {
 
-    private String firstName = "国栋" ;
-    private String lastName = "曹";
+    private Integer id;
+    private String firstName ;
+    private String lastName ;
+    private String school;
+    private String college;
+    private String major;
     Logger logger = Logger.getLogger(PersonImpl.class);
+
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getSchool() {
+        return school;
+    }
+
+    public void setSchool(String school) {
+        this.school = school;
+    }
+
+    public String getCollege() {
+        return college;
+    }
+
+    public void setCollege(String college) {
+        this.college = college;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -26,6 +63,36 @@ public class PersonImpl implements Person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getFirstName() {
+        logger.debug("这是调用getFirstName");
+        return firstName;
+    }
+
+    public String getLastName() {
+        logger.debug("这是调用getLastName");
+        return lastName;
+    }
+
+    public String getFullName() {
+        logger.debug("这是调用getFullName");
+        return lastName+firstName;
+    }
+
+    public String getFirstNameSpell() {
+        logger.debug("这是调用getFirstNameSpell");
+        return HanyuPinyinHelper.toHanyuPinyin(firstName);
+    }
+
+    public String getLastNameSpell() {
+        logger.debug("这是调用getLastNameSpell");
+        return HanyuPinyinHelper.toHanyuPinyin(lastName);
+    }
+
+    public String getFullNameSpell() {
+        logger.debug("这是调用getFullNameSpell");
+        return HanyuPinyinHelper.toHanyuPinyin(lastName+firstName);
     }
 
     @Override
@@ -56,37 +123,6 @@ public class PersonImpl implements Person {
                 .append("firstName", firstName)
                 .append("lastName", lastName)
                 .toString();
-    }
-
-    public String getFirstName() {
-        logger.debug("这是调用getFirstName");
-        return firstName;
-    }
-
-
-    public String getLastName() {
-        logger.debug("这是调用getLastName");
-        return lastName;
-    }
-
-    public String getFullName() {
-        logger.debug("这是调用getFullName");
-        return lastName+firstName;
-    }
-    public String getFirstNameSpell() {
-        logger.debug("这是调用getFirstNameSpell");
-        return HanyuPinyinHelper.toHanyuPinyin(firstName);
-    }
-
-
-    public String getLastNameSpell() {
-        logger.debug("这是调用getLastNameSpell");
-        return HanyuPinyinHelper.toHanyuPinyin(lastName);
-    }
-
-    public String getFullNameSpell() {
-        logger.debug("这是调用getFullNameSpell");
-        return HanyuPinyinHelper.toHanyuPinyin(lastName+firstName);
     }
 
     public static void main(String[] args) {
